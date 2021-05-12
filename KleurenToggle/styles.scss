@@ -1,0 +1,63 @@
+@mixin reset {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+$base-color: lightgray;
+
+* {
+  @include reset;
+}
+
+body {
+  background-color: $base-color;
+}
+
+.burgerButton {
+  border: none;
+  background-color: inherit;
+}
+
+.menu {
+  transform: translateY(-150%);
+  transition-duration: 1s;
+  background-color: $base-color;
+  border: 1px solid $base-color;
+  width: 40%;
+  overflow: hidden;
+  li {
+    margin: 5px 0px;
+    padding: 20px;
+    width: 100%;
+    a {
+      color: black;
+    }
+  }
+}
+
+.showMenu {
+  transform: translateY(0);
+  transition-duration: 0.5s;
+}
+
+.home {
+  background-color: $base-color;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: green;
+}
